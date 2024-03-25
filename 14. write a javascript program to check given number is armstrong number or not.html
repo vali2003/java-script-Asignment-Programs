@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>to check given number is armstrong number or not</h5>
+    <script>
+        var num=prompt("enter a number");
+        var numberofdigits=num.length;
+        let sum=0;
+        temp=num;
+        while(num>0){
+            rem=num%10;
+            sum+=rem**numberofdigits;
+            num=parseInt(num/10);
+        }
+        num=temp;
+        if(sum==num){
+            document.write(num+"is a armstrong number");
+        }
+        else{
+            document.write(num+"is not a armstrong");
+        }
+    </script>
+</body>
+</html>

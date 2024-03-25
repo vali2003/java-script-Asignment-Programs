@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>to  print grade of the student by reading marks from the user</h5>
+    <script>
+        marks=parseInt(prompt("Enter a Marks"));
+        if(marks>90&&marks<100){
+            document.write("Cangragulations you are outstanding")
+        }
+        else if(marks>80&&marks<=90)
+        {
+            document.write("A Grade")
+
+        }
+        else if(marks>70&&marks<=80)
+        {
+            document.write("B Grade")
+        }
+        else if(marks>60&&marks<=70)
+        {
+            document.write("C Grade")
+        }
+        else if(marks>0&&marks<=50){
+            document.write("sorry bro you Fail")
+        }
+        else {
+            document.write("Invaild marks,Enter valid Numbers");
+        }
+    </script>
+</body>
+</html>
